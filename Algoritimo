@@ -1,0 +1,48 @@
+class Solution {
+
+    public int solution(int N) {
+
+        String binaryN = Integer.toBinaryString(N);
+        //converter N para a sua representção binaria
+        
+        int maxGap = 0;
+
+        int currentGap = 0;
+
+        boolean inGap = false;
+
+        for (int i = 0; i < binaryN.length(); i++) {
+
+            char c = binaryN.charAt(i);
+
+            if (c == '0') {
+
+                if (!inGap) {
+
+                    inGap = true;
+
+                }
+
+                currentGap++;
+
+            } else {
+
+                if (inGap) {
+
+                    maxGap = Math.max(maxGap, currentGap);
+
+                    currentGap = 0;
+
+                    inGap = false;
+
+                }
+
+            }
+
+        }
+
+        return maxGap;
+
+    }
+
+}
