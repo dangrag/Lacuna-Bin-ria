@@ -17,4 +17,3 @@ Por exemplo, dado N = 1041, a função deve retornar 5, porque N tem representa�
 Escreva um algoritmo eficiente para as seguintes suposições:
 
 N é um número inteiro dentro do intervalo [ 1 .. 2.147.483.647 ].
-Copyright 2009–2025 por Codility Limited. Todos os direitos reservados. Cópia, publicação ou divulgação não autorizadas são proibidas.
